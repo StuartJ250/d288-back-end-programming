@@ -7,10 +7,10 @@ FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFE
 For this project, you will be building your project using IntelliJ IDEA (Ultimate Edition) in a WGU-provided lab environment. You will be working with an existing MySQL database and Angular front-end, which are supplied for you in the lab environment. You will share this project to a private external GitLab repository and backup regularly. If you wish to work on it on your local machine, you will also need to download the Angular front-end application and create your own MySQL database. Use the links on your course page to install the integrated development environments (IDE), MySQL WorkBench, and IntelliJ IDEA, and pull the project from the lab environment.  
 
 
-## SUPPLEMENTAL RESOURCES  
+## SUPPLEMENTAL RESOURCES
 1.	How to clone a project to IntelliJ using Git?
 
-> Ensure that you have Git installed on your system and that IntelliJ is installed using [Toolbox](https://www.jetbrains.com/toolbox-app/). Make sure that you are using version 2022.3.2. Once this has been confirmed, click the clone button and use the 'IntelliJ IDEA (HTTPS)' button. This will open IntelliJ with a prompt to clone the proejct. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.  
+> Ensure that you have Git installed on your system and that IntelliJ is installed using [Toolbox](https://www.jetbrains.com/toolbox-app/). Make sure that you are using version 2022.3.2. Once this has been confirmed, click the clone button and use the 'IntelliJ IDEA (HTTPS)' button. This will open IntelliJ with a prompt to clone the project. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.
 
 2. How to create a branch and start Development?
 
@@ -24,4 +24,27 @@ For this project, you will be building your project using IntelliJ IDEA (Ultimat
 If you need additional support, please navigate to the course page and reach out to your course instructor.
 ## FUTURE USE
 Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use in career search, experience, and education!
+
+
+A.   Create a new Java project using Spring Initializr:
+- Created Java project with Spring Initializr using Spring Data JPA, Rest Repositories, MySQL Driver, and Lombok dependencies
+
+B.   Create your subgroup and project by logging into GitLab using the web link provided and do the following:
+- Ran Pipeline on GitLab and cloned project to IDE
+- Created working_branch branch from main
+- Added Spring Project files to working_branch
+- Updated application.properties with provided file
+
+C.   Construct four new packages, one for each of the following: controllers, entities, dao, and services. The packages will need to be used for a checkout form and vacations packages list.
+- Created controllers package in com.example.demo
+- Created entities package in com.example.demo
+- Created dao package in com.example.demo
+- Created services package in com.example.demo
+- Created config package in com.example.demo
+- added RestDataConfig.java file to config package
+
+Note: The packages should be on the same level of the hierarchy.
+
+Note: Construct a package named config and copy the RestDataConfig.java provided in the laboratory environment to the package. Modify it so that the package and imports have the correct package and import addresses. Copy the application.properties file that is provided in the laboratory environment into your application properties resource file.
+
 
