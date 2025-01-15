@@ -28,7 +28,7 @@ public class CartItem {
 
     @ManyToOne
     @JoinColumn(name = "cart_id", nullable = false)
-    private Cart cart_ID;
+    private Cart cart;
 
     @ManyToOne
     @JoinColumn(name = "vacation_id", nullable = false)
@@ -66,12 +66,12 @@ public class CartItem {
         this.last_update = last_update;
     }
 
-    public Cart getCart_ID() {
-        return cart_ID;
+    public Cart getCart() {
+        return cart;
     }
 
-    public void setCart_ID(Cart cart_ID) {
-        this.cart_ID = cart_ID;
+    public void setCart(Cart cart_ID) {
+        this.cart = cart;
     }
 
     public Vacation getVacation() {

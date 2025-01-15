@@ -83,3 +83,7 @@ D.   Write code for the entities package that includes entity classes and the en
 - Created VacationRepository.java in dao package
 - Added Cross-origin support to all Repository files
 - Further fixed issue which caused Divisions to not display on front end
+- Fixed cart.java and cartItem.java syntax errors
+- Fixed import of RestDataConfig.java on line 3
+- Fixed package location of DemoApplication.java on line 1
+- 
