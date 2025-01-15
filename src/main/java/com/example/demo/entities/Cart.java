@@ -28,7 +28,7 @@ public class Cart {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
-    private Status status;
+    private StatusType statusType;
 
     @Column(name = "order_tracking_number")
     private String orderTrackingNumber;
@@ -72,12 +72,12 @@ public class Cart {
         this.party_size = party_size;
     }
 
-    public Status getStatus() {
-        return status;
+    public StatusType getStatus() {
+        return statusType;
     }
 
-    public void setStatus(Status status) {
-        this.status = status;
+    public void setStatus(StatusType statusType) {
+        this.statusType = statusType;
     }
 
     public String getOrderTrackingNumber() {

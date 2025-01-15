@@ -69,8 +69,17 @@ D.   Write code for the entities package that includes entity classes and the en
 - Added @ManyToMany relationship to CartItem.Java on line 40
 - Added @ManyToMany relationship to Excursion.Java on line 45
 - Created Enum Status.java
-- Added @Enumerated to variable "status" to Cart.java on line 30
+- Added @Enumerated to variable "statusType" to Cart.java on line 30
 - Updated RestDataConfig.java to include correct import on line 3
 - Changed variable country in Division.java on lines 31-33
 - Changed Status.java to StatusType.java
-
+  E.   Write code for the dao package that includes repository interfaces for the entities that extend JpaRepository, and add cross-origin support.
+- Created CartItemRepository.java in dao package
+- Created CartRepository.java in dao package
+- Created CountryRepository.java in dao package
+- Created CustomerRepository.java in dao package
+- Created DivisionRepository.java in dao package
+- Created ExcursionRepository.java in dao package
+- Created VacationRepository.java in dao package
+- Added Cross-origin support to all Repository files
+- Further fixed issue which caused Divisions to not display on front end
