@@ -47,4 +47,30 @@ Note: The packages should be on the same level of the hierarchy.
 
 Note: Construct a package named config and copy the RestDataConfig.java provided in the laboratory environment to the package. Modify it so that the package and imports have the correct package and import addresses. Copy the application.properties file that is provided in the laboratory environment into your application properties resource file.
 
+D.   Write code for the entities package that includes entity classes and the enum designed to match the UML diagram.
+- Created Cart class in entities package
+- Created CartItem class in entities package
+- Created Country class in entities package
+- Created Customer class in entities package
+- Created Division class in entities package
+- Created Excursion class in entities package
+- Created Vacation class in entities package
+- Added @OneToMany relationship to Cart.java on line 44
+- Added @ManyToOne relationship on Cartitem.java on line 32
+- Added @OneToMany relationship to Country.java on line 35
+- Added @ManyToOne relationship to Division.java on line 31
+- Added @OneToMany relationship to Customer.java on line 51
+- Added @ManyToOne relationship to Cart.java on line 47
+- AAdded @OneToMany relationship to Division.java on line 35
+- Added @ManyToOne relationship to Customer.java on line 47
+- Added @OneToMany relationship to Vacation.java on line 44
+- Added @ManyToOne relationship to Excursion.java on line 41
+- Added @ManyToOne relationship to CartItem.java on line 36
+- Added @ManyToMany relationship to CartItem.Java on line 40
+- Added @ManyToMany relationship to Excursion.Java on line 45
+- Created Enum Status.java
+- Added @Enumerated to variable "status" to Cart.java on line 30
+- Updated RestDataConfig.java to include correct import on line 3
+- Changed variable country in Division.java on lines 31-33
+- Changed Status.java to StatusType.java
 
