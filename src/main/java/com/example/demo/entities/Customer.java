@@ -44,7 +44,7 @@ public class Customer {
     @JoinColumn(name = "division_id", nullable = false)
     private Division division;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "customer")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "customer", fetch = FetchType.LAZY)
     private Set<Cart> carts;
 
     public Long getId() {

@@ -86,4 +86,4 @@ D.   Write code for the entities package that includes entity classes and the en
 - Fixed cart.java and cartItem.java syntax errors
 - Fixed import of RestDataConfig.java on line 3
 - Fixed package location of DemoApplication.java on line 1
-- 
+- Fixed Division.java and Customer.java table conflict. changed table to 'divisions' in Divisions.java on line 12

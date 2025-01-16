@@ -1,13 +1,15 @@
 package com.example.demo.entities;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
 import java.util.Set;
 
 
 @Entity
-@Table(name = "customers")
+@Table(name = "divisions")
 public class Division {
 
     @Column(name = "division")
@@ -18,26 +20,26 @@ public class Division {
     @Column(name = "division_id")
     private Long id;
 
+    @CreationTimestamp
     @Column(name = "create_date")
     private Date create_date;
 
+    @UpdateTimestamp
     @Column(name = "last_update")
     private Date last_update;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "country_id", nullable = false, insertable = false, updatable = false)
+    @JoinColumn(name = "Country_ID", nullable = false, insertable = false, updatable = false)
     private Country country;
-
-    @Column(name = "country_id", insertable = false, updatable = false)
-    private Long countryID;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "division")
     private Set<Customer> customers;
 
+    @Column(name = "Country_ID")
+    private Long country_id;
     public void setCountry(Country country) {
+        setCountry_id(country.getId());
         this.country = country;
-        this.countryID = (country != null) ? country.getId() : null;
-
     }
 
     public String getDivision_name() {
@@ -76,12 +78,12 @@ public class Division {
         return country;
     }
 
-    public Long getCountryID() {
-        return countryID;
+    public Long getCountry_id() {
+        return country_id;
     }
 
-    public void setCountryID(Long countryID) {
-        this.countryID = countryID;
+    public void setCountry_id(Long countryID) {
+        this.country_id = countryID;
     }
 
     public Set<Customer> getCustomers() {
