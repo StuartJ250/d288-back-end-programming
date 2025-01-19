@@ -73,6 +73,7 @@ D.   Write code for the entities package that includes entity classes and the en
 - Updated RestDataConfig.java to include correct import on line 3
 - Changed variable country in Division.java on lines 31-33
 - Changed Status.java to StatusType.java
+
   E.   Write code for the dao package that includes repository interfaces for the entities that extend JpaRepository, and add cross-origin support.
 - Created CartItemRepository.java in dao package
 - Created CartRepository.java in dao package
@@ -87,3 +88,49 @@ D.   Write code for the entities package that includes entity classes and the en
 - Fixed import of RestDataConfig.java on line 3
 - Fixed package location of DemoApplication.java on line 1
 - Fixed Division.java and Customer.java table conflict. changed table to 'divisions' in Divisions.java on line 12
+
+F.   Write code for the services package that includes each of the following:
+•    a purchase data class with a customer cart and a set of cart items
+•    a purchase response data class that contains an order tracking number
+•    a checkout service interface
+•    a checkout service implementation class
+
+- Re-created controllers and services package as, for some reason, the IDE removed them after reconnecting to Gitlab
+- Created Purchase.java class in services
+- Created PurchaseResponse.java class in services
+- Created CheckoutService.java interface in services
+- Created CheckoutServiceImpl.java class in services
+- Created new method add in Cart.java on line 51
+- Created new method add in Customer.java on line 130
+- Created variables in Purchase.java on line 13-15
+- Created getters and setters on Purchase.java on line 17-35
+- Created method setCartItems in Purchase.java on line 37
+- Created variable in PurchaseResponse.java on line 9
+- Created constructor in PurchaseResponse.java on line 11
+- Created constructor in CheckoutService.java on line 7
+- Created variables in CheckoutServiceImpl.java on lines 23-28
+- Created constructor in CheckoutServiceImpl.java on line 30
+- Created method in CheckoutServiceImpl.java on line 35
+- Created method in CheckoutServiceImpl.java on line 57
+
+
+G.   Write code to include validation to enforce the inputs needed by the Angular front-end.
+
+H.   Write code for the controllers package that includes a REST controller checkout controller class with a post mapping to place orders.
+
+Note: You do not need to duplicate REST functionality for each repository by creating methods in Java.
+
+I.   Add five sample customers to the application programmatically.
+
+Note: Make sure the customer information is not overwritten each time you run the application.
+
+J.   Run your integrated application by adding a customer order for a vacation with two excursions using the unmodified Angular front-end. Provide screenshots for the following:
+
+•    that your application does not generate a network error when adding the data
+
+•    your database tables using MySQL Workbench to show the data was successfully added
+
+
+Note: The screenshot should include the front-end view and the inspection console in the browser.
+
+K.   Demonstrate professional communication in the content and presentation of your submission.

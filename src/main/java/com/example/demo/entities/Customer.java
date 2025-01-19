@@ -126,4 +126,8 @@ public class Customer {
     public void setCarts(Set<Cart> carts) {
         this.carts = carts;
     }
+
+    public void add(Cart cart) {
+        this.carts.add(cart);
+    }
 }

@@ -42,12 +42,15 @@ public class Cart {
     private Date last_update;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cart")
-    private Set<CartItem> cartItem = new HashSet<>();
+    private Set<CartItem> cartItems = new HashSet<>();
 
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer;
 
+    public void add(CartItem cartItem){
+        this.cartItems.add(cartItem);
+    }
     public Long getId() {
         return id;
     }
@@ -105,11 +108,11 @@ public class Cart {
     }
 
     public Set<CartItem> getCartItem() {
-        return cartItem;
+        return cartItems;
     }
 
     public void setCartItem(Set<CartItem> cartItem) {
-        this.cartItem = cartItem;
+        this.cartItems = cartItem;
     }
 
     public Customer getCustomer() {
