@@ -25,6 +25,7 @@ public class CheckoutServiceImpl implements CheckoutService {
 
     @Autowired
     private CartItemRepository cartItemRepository;
+    @Autowired
     private CustomerRepository customerRepository;
 
     public CheckoutServiceImpl(CustomerRepository customerRepository){

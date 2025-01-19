@@ -116,10 +116,14 @@ F.   Write code for the services package that includes each of the following:
 
 G.   Write code to include validation to enforce the inputs needed by the Angular front-end.
 
+- Added "nullable = false" to all required fields within the @Column annotation in Customer.java
+- 
+
 H.   Write code for the controllers package that includes a REST controller checkout controller class with a post mapping to place orders.
 
 Note: You do not need to duplicate REST functionality for each repository by creating methods in Java.
 
+- 
 I.   Add five sample customers to the application programmatically.
 
 Note: Make sure the customer information is not overwritten each time you run the application.
